@@ -146,6 +146,16 @@ const CONFIG_DB_REDIS_CONFIG_JSON: &str = r#"
                 "id": 4,
                 "separator": ":",
                 "instance": "redis"
+            },
+            "CHASSIS_STATE_DB": {
+                "id": 5,
+                "separator": "|",
+                "instance": "redis"
+            },
+            "CHASSIS_APP_DB": {
+                "id": 6,
+                "separator": "|",
+                "instance": "redis"
             }
         }
     }
