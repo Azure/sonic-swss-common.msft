@@ -76,7 +76,7 @@ void ZmqServer::bind()
         zmq_setsockopt(m_socket, ZMQ_BINDTODEVICE, m_vrf.c_str(), m_vrf.length());
     }
 
-    SWSS_LOG_NOTICE("ZmqServer socket created, actual bind to %s will occur asynchronously in mqPollThread to prevent blocking", m_endpoint.c_str());
+    SWSS_LOG_NOTICE("ZmqServer socket created, actual bind to %s will occur in mqPollThread to prevent blocking", m_endpoint.c_str());
 
     startMqPollThread();
 }
